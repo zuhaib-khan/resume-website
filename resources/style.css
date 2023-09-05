@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+:root{
+    --mainTextColor-light:#000;
+    --secondaryTextColor-light:rgb(51 51 51);
+    --mainLinkColor-light:#0da2b8;
+    --mainBorderColor-light:rgb(218, 218, 218);
+    --mainBgColor-light:rgb(249, 250,251);
+
+    --mainTextColor-dark:#fff;
+    --secondaryTextColor-dark:#adb0b1;
+    --mainLinkColor-dark:rgb(30, 190,214);
+    --mainBorderColor-dark:#2b3031;
+    --mainBgColor-dark:#131415;
+    
+    --mainTextColor:var(--mainTextColor-dark);
+    --secondaryTextColor:var(--secondaryTextColor-dark);
+    --mainLinkColor:var(--mainLinkColor-dark);
+    --mainBorderColor:var(--mainBorderColor-dark);
+    --mainBgColor:var(--mainBgColor-dark);
+
+}
+
+*{
+    font-family: 'Readex Pro';
+    line-height: 1.5em;
+    box-sizing: border-box;
+    color: var(--mainTextColor);
+}
+
+body{
+    background-color: var(--mainBgColor);
+}
+
+p, span, li{
+    color: var(--secondaryTextColor);
+    font-size: 1em;
+}
+
+
+.headings i{
+    padding-right: 5px;
+}
+a{
+    text-decoration: none;
+    color: var(--mainLinkColor);
+    font-weight: 500;
+}
+li{
+    line-height: 1.9em;
+}
+
+.container-main{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.sections{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#hero{
+    gap: 4em;
+    display: flex;
+    align-items: center
+    /** Give 4em padding**/
+}
+
+#name{
+    font-size: 3em;
+    line-height: 1em;
+}
+
+#bio, a{
+    font-weight: 300;
+
+}
+
+#profile-pic{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit:cover;
+}
+
+#email{
+    color: var(--mainTextColor);
+}
+
+#social-links{
+    display:flex;
+    justify-content: flex-start;
+    column-gap: 1em;
+}
+
+#social-links a{
+    font-size: 0.9em;
+    color: var(--secondaryTextColor);
+}
+
+#social-links a:hover{
+    color: var(--mainLinkColor);
+    transition: 0.2s;
+}
+
+.prog-skills span{
+    border: 0.5px solid var(--mainBorderColor);
+    margin: 5px;
+    padding: 2px 3px 2px 1px;
+}
+
+@media(max-width:600px){
+    .hero{
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    }
+#last-project{
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
